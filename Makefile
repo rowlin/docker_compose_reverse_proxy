@@ -20,5 +20,3 @@ redis-cli:
 	docker-compose exec redis redis-cli
 tests:
 	docker-compose run --rm php-cli ./vendor/bin/phpunit
-command:
-	docker-compose run --rm php-cli php ./command.php ${arg}

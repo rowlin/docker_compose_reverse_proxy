@@ -1,4 +1,11 @@
-Для запуска проекта необходимо выполнить 
+Пустой репозиторий , в котором выполнены первоначальные настройки для начала разработки
+
+Первоначальные настройки :
+nginx - в качестве reversed proxy
+php-cli - окружение c php-8.1 + composer
+php-fpm - с php-8.1
+nginx - для фронта  
+
 ```
 make init
 ```
@@ -6,19 +13,7 @@ make init
 ```
 make tests 
 ```
-Для запуска команды
-```
-make command arg='redis add key value'
 
-make command arg='redis remove key'
-```
-Подробнее Makefile
+Подробнее в Makefile
 
-Данная реализация требует рефакторинга , но требования изложенные в тз выполняет.
-
-
-
-
-
-https://user-images.githubusercontent.com/9290549/169257518-4ec2c084-a5c2-4075-b8cc-f9a4466a75cc.mp4
 
