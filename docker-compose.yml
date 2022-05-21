@@ -1,25 +1,10 @@
 version: '3.9'
 services:
-  gateway:
-    build:
-      dockerfile: docker/gateway/nginx/Dockerfile
-    ports:
-      - "80:8080"
-      - "8081:8081"
-    depends_on:
-      - web
-      - api
-      - mysql
-  web:
-    build:
-      dockerfile: docker/frontend/nginx/Dockerfile
-    volumes:
-      - ./app:/app
   php-fpm:
     build:
       dockerfile: docker/backend/php-fpm/Dockerfile
     volumes:
-      - ./api:/app
+      - ./app:/app
     depends_on:
       - redis
       - mysql
@@ -28,17 +13,21 @@ services:
       context: docker/
       dockerfile: backend/php-cli/Dockerfile
     volumes:
-      - ./api:/app
+      - ./app:/app
     depends_on:
       - redis
       - mysql
-  api:
+  app:
     build:
       dockerfile: docker/backend/nginx/Dockerfile
     volumes:
-      - ./api:/app
+      - ./app:/app
     depends_on:
       - php-fpm
+      - mysql
+      - redis
+    ports:
+      - "80:80"
   redis:
     build:
       dockerfile: docker/redis/Dockerfile
