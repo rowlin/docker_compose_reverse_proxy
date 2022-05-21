@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="283ced4e-c29f-4940-adfe-4b300dc971d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/common/frontend/nginx/conf.d/default.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/common/gateway/nginx/conf.d/backend.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/common/gateway/nginx/conf.d/frontend.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/frontend/nginx/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/gateway/nginx/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/backend/php-cli/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/php-cli/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/backend/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/php-fpm/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
       <updated>1653003082900</updated>
       <workItem from="1653003084109" duration="4212000" />
       <workItem from="1653025142101" duration="1550000" />
-      <workItem from="1653081530517" duration="2012000" />
+      <workItem from="1653081530517" duration="2730000" />
     </task>
     <servers />
   </component>
